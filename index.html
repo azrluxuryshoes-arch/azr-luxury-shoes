@@ -7,7 +7,7 @@
 
 <title>AZR Luxury Shoes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,11 +15,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins;
 }
 
 body{
-background:#f6f6f6;
+font-family:Poppins;
+background:#f4f4f4;
+color:#333;
 }
 
 /* HEADER */
@@ -34,8 +35,8 @@ padding:20px 80px;
 }
 
 .logo{
-font-size:34px;
-font-weight:700;
+font-family:"Playfair Display";
+font-size:38px;
 letter-spacing:6px;
 }
 
@@ -43,59 +44,72 @@ nav a{
 color:white;
 margin-left:30px;
 text-decoration:none;
-font-size:16px;
+font-weight:300;
 }
 
 /* HERO */
 
 .hero{
-height:80vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url("https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77");
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
+
 text-align:center;
+color:white;
 }
 
 .hero h1{
-font-size:60px;
-letter-spacing:5px;
+font-size:70px;
+letter-spacing:6px;
 }
 
 .hero p{
 margin-top:20px;
-font-size:20px;
+font-size:22px;
 }
 
-/* PRODUCTS */
+.hero button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+background:gold;
+font-size:16px;
+cursor:pointer;
+}
 
-.products{
+/* COLLECTION */
+
+.collection{
 padding:80px;
 text-align:center;
 }
 
-.products h2{
-font-size:40px;
-margin-bottom:40px;
+.collection h2{
+font-size:42px;
+margin-bottom:50px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:40px;
 }
 
 .card{
 background:white;
 border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 padding:20px;
-transition:.3s;
+transition:0.4s;
 }
 
 .card:hover{
@@ -104,18 +118,39 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
+border-radius:8px;
 }
 
 .card h3{
 margin-top:10px;
 }
 
+/* BANNER */
+
+.banner{
+height:400px;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1542291026-7eec264c27ff");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+font-size:40px;
+font-family:"Playfair Display";
+}
+
 /* ABOUT */
 
 .about{
 padding:80px;
-background:white;
 text-align:center;
+background:white;
 }
 
 .about h2{
@@ -136,13 +171,14 @@ background:black;
 color:white;
 text-align:center;
 padding:30px;
-margin-top:40px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
 padding:15px 20px;
@@ -155,6 +191,7 @@ font-weight:600;
 
 </head>
 
+
 <body>
 
 <header>
@@ -162,10 +199,12 @@ font-weight:600;
 <div class="logo">AZR</div>
 
 <nav>
+
 <a href="#">Home</a>
-<a href="#">Shoes</a>
+<a href="#">Collection</a>
 <a href="#">About</a>
 <a href="#">Contact</a>
+
 </nav>
 
 </header>
@@ -175,42 +214,72 @@ font-weight:600;
 
 <h1>AZR LUXURY SHOES</h1>
 
-<p>Premium Sneakers Designed for Style & Comfort</p>
+<p>Elegant Sneakers for Modern Style</p>
+
+<button>Explore Collection</button>
 
 </section>
 
 
-<section class="products">
+<section class="collection">
 
-<h2>Our Collection</h2>
+<h2>Women's Collection</h2>
 
 <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
-<h3>AZR Summer Sneaker</h3>
-<p>Lightweight stylish sneaker</p>
-</div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
-<h3>AZR Street Style</h3>
-<p>Modern everyday sneaker</p>
+
+<h3>AZR Gold Samba</h3>
+
+<p>Luxury sneaker with golden details</p>
+
 </div>
 
+
 <div class="card">
+
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+
+<h3>AZR Classic White</h3>
+
+<p>Elegant everyday sneaker</p>
+
+</div>
+
+
+<div class="card">
+
 <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a">
-<h3>AZR Classic</h3>
-<p>Elegant sport design</p>
+
+<h3>AZR Street Style</h3>
+
+<p>Comfortable urban sneaker</p>
+
 </div>
+
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
-<h3>AZR Urban</h3>
-<p>Comfortable premium sneaker</p>
-</div>
+
+<h3>AZR Summer Gold</h3>
+
+<p>Modern premium design</p>
 
 </div>
+
+
+</div>
+
+</section>
+
+
+<section class="banner">
+
+Luxury Fashion Sneakers
 
 </section>
 
@@ -221,10 +290,11 @@ font-weight:600;
 
 <p>
 
-AZR Luxury Shoes is a premium footwear brand focused on elegant
-design, comfort, and high quality craftsmanship.
-Our sneakers combine modern fashion with everyday comfort,
-inspired by European luxury footwear brands.
+AZR Luxury Shoes is a premium footwear brand designed for women who
+love style, elegance and comfort.
+
+Our sneakers combine luxury design with everyday comfort inspired
+by European fashion trends.
 
 </p>
 
@@ -238,8 +308,11 @@ inspired by European luxury footwear brands.
 </footer>
 
 
-<a class="whatsapp" href="https://wa.me/123456789">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/963939411553">
+
+WhatsApp
+
+</a>
 
 </body>
-
 </html>
